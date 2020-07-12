@@ -13,6 +13,16 @@ To see the ProblemDetail response in action, go to [http://localhost:5000/weathe
 dotnet test
 ```
 
+### Exception Detail
+```
+Message:
+  System.NullReferenceException : Object reference not set to an instance of an object.
+Stack Trace:
+  ControllerBase.Problem(String detail, String instance, Nullable`1 statusCode, String title, String type)
+  WeatherForecastController.GetWeatherForecast(Int32 numberOfDays) line 35
+  WeatherForecastUnitTests.WeatherForecastHandlesExceptions() line 35
+```
+
 
 
 
